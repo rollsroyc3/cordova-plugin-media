@@ -585,7 +585,7 @@ public class AudioPlayer implements OnCompletionListener, OnPreparedListener, On
                     //if we are readying the same file
                     if (this.audioFile.compareTo(file) == 0) {
                         //maybe it was recording?
-                        if(this.recorder!=null && player==null) {
+                         if (player == null) {
                             this.player = new MediaPlayer();
                             this.player.setOnErrorListener(this);
                             this.prepareOnly = false;
