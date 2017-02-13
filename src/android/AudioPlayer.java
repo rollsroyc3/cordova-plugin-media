@@ -357,6 +357,14 @@ public class AudioPlayer implements OnCompletionListener, OnPreparedListener, On
     }
 
     /**
+     * Resume playing.
+     */
+    public void resumePlaying() {
+   	    this.startPlaying(this.audioFile);
+    }
+
+
+    /**
      * Callback to be invoked when playback of a media source has completed.
      *
      * @param player           The MediaPlayer that reached the end of the file
